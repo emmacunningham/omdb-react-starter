@@ -11,4 +11,5 @@
     "react/prefer-stateless-function": "off",
     "class-methods-use-this": "off",
   },
+  "parser": "babel-eslint",
 }
