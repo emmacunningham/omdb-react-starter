@@ -18,3 +18,4 @@ Starter code for OMdB React project
 *   Display details on individual title click
 *   Display movie results sorted by Year
 *   Search on input change
+*   Handle errors
