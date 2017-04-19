@@ -1,0 +1,39 @@
+{
+  "name": "omdb-react-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "npm run vendor && webpack",
+    "develop": "export NODE_ENV=develop && npm run vendor && webpack-dev-server",
+    "linter": "eslint ui/**",
+    "server": "http-server public",
+    "vendor": "webpack --config vendor.js"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8",
+    "react": "~15.3.1",
+    "react-dom": "~15.3.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0",
+    "redux-saga": "^0.10.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.0",
+    "http-server": "^0.8.5",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

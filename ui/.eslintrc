@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+  },
+  "globals": {
+    "React": true,
+  },
+  "rules": {
+    "no-console": "off",
+    "react/prefer-stateless-function": "off",
+    "class-methods-use-this": "off",
+  },
+}
