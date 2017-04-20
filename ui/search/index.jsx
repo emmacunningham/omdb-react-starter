@@ -45,13 +45,15 @@ export default class Search extends React.Component {
       onChange: this.handleChange,
       onKeyPress: this.handleKeyPress,
     };
-    return <input {...props} />;
+    return <input className='form-control' {...props} />;
   }
 
   render() {
     return (
-      <div>
-        {this.renderInput()}
+      <div className="row">
+        <div className='col-lg-3 col-xs-12'>
+          {this.renderInput()}
+        </div>
       </div>
     );
   }

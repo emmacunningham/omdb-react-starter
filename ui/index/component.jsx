@@ -36,10 +36,13 @@ export default class Index extends React.Component {
   renderMovie(movie, idx) {
     const { Poster, Title, Year } = movie;
     return (
+
       <div key={idx}>
-        <div><img src={Poster} alt="poster" /></div>
-        <div>{Title}</div>
-        <div>{Year}</div>
+        <div className='col-lg-4 col-md-6 col-xs-12 text-center'>
+        <button className='notVisible'>
+          <img src={Poster} className='poster' alt="poster"/>
+        </button>
+        </div>
       </div>
     );
   }
@@ -59,8 +62,14 @@ export default class Index extends React.Component {
     return (
       <div>
         <Search {...inputProps} />
-        <button onClick={this.handleSearch}>Search</button>
-        {this.renderMovies()}
+        <div className='row'>
+          <div className='col-xs-4 col-xs-offset-3'>
+            <button className='btn btn-primary' onClick={this.handleSearch}>Search</button>
+          </div>
+        </div>
+        <div className='row well'>
+          {this.renderMovies()}
+        </div>
       </div>
     );
   }
